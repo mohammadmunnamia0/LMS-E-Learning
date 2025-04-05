@@ -11,6 +11,7 @@ app.get("/",(req,res)=>{
 
 //importing routes
 import userRoutes from "./routes/user.js"
+
 //Using routes
 app.use("/api",userRoutes )
 
