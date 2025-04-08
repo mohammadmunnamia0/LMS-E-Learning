@@ -4,17 +4,19 @@ import { connectDb } from './database/db.js';
 
 const app = express();
 
+// using middleware
+
+app.use(express.json());
+
 app.get("/",(req,res)=>{
     res.send('Server is Working');
 })
-
 
 //importing routes
 import userRoutes from "./routes/user.js"
 
 //Using routes
-app.use("/api",userRoutes )
-
+app.use("/api",userRoutes)
 
 const port = process.env.PORT || 5000;
 

@@ -1,32 +1,31 @@
 import mongoose from "mongoose";
 
-const schema = new mongoose.schema({
-    name:{
+const schema = new mongoose.Schema({
+    name: {
         type: String,
-        required : true
+        required: true
     },
-    email:{
+    email: {
         type: String,
-        required : true,
-        unique : true,
+        required: true,
+        unique: true,
     },
-    password:{
+    password: {
         type: String,
-        required : true
+        required: true
     },
-    role:{
+    role: {
         type: String,
-        default :"user",
+        default: "user",
     },
     subscription: [
         {
-            type : mongoose.schema.types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: "Course",
         }
     ]
-    
-},{
+}, {
     timestamps: true,
-})
+});
 
-export const use = mongoose.model("user", schema);
+export const User = mongoose.model("User", schema);
