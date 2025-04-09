@@ -1,6 +1,3 @@
-Sure bro! 🔥 Niche theke upore **poora process ta summarize korchi step-by-step**, so tumi easily bujhte parba and next time just follow kore kaaj shesh!
-
----
 
 ## ✅ Goal:  
 **Secondary GitHub account** theke **Primary account**-er ekta repo te code push korbo.
